@@ -1,3 +1,4 @@
+ifeq ($(TARGET_DEVICE),amami)
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
@@ -23,3 +24,4 @@ LOCAL_PRIVILEGED_MODULE := true
 LOCAL_PROGUARD_ENABLED := disabled
 
 include $(BUILD_PACKAGE)
+endif
